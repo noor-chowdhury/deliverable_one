@@ -1,0 +1,184 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: #F0ECEE;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+span{
+	color: #FF4850;
+}
+
+button {
+	width: 100%;
+	background-color: #FF4850;
+	border: none;
+	border-radius: 15px;
+	padding: 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #ccc;
+	color: #FF4850;
+}
+
+.main-content-wrap, .header-wrap {
+	margin: 0 20px;
+}
+
+
+
+/* ==== header-section-styles ==== */
+
+
+
+.header-container {
+	display: flex;	
+	flex-direction: column;
+	padding-top: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+h2 a {
+	color: #000;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+nav ul {
+	list-style: none;
+	display:flex;
+	flex-direction: column;
+}
+
+nav ul li a {
+	font-size: 20px;
+	color: #88898B;
+	font-weight: 400;
+}
+
+nav ul li button {
+	margin: 20px 0;
+}
+
+nav ul li a:hover{
+	color: #FF4850;
+}
+
+
+
+/* ==== main-content-section-styles ==== */
+
+
+
+.main-content{
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 32px;
+	font-weight: 600;
+	margin-top: 20px;
+	line-height: 45px;
+}
+
+p {
+	color: #8C8B8B;
+	font-size: 15px;
+	margin: 25px 0;
+	
+}
+
+
+
+/* ==== responsive-styles ==== */
+
+
+
+@media (min-width: 768px) {
+	
+	button {
+		width: auto;
+	}
+	
+	.main-content-wrap, .header-wrap {
+		margin: 0;
+	}
+	
+	.header-container {
+		align-items: center;
+		flex-direction:row;
+		padding: 40px;
+	}
+	
+	h2 {
+		margin-right: auto;
+		margin-bottom: 0;
+	}
+	
+	nav ul {
+		flex-direction: row;
+		align-items: center;
+	}
+	
+	nav ul li {
+		width: 116px;
+		display: flex;
+		justify-content: center;
+	}
+	
+	nav ul li:last-child {
+		margin-left: 10px;
+	}
+
+	nav ul li button {
+		margin: 0;
+		padding: 10px;
+	}
+	
+	.main-content{
+		align-items: flex-start;
+		padding: 140px 40px 180px 40px;
+		
+		background-image: url("bulldog.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+	
+	h1 {
+		width: 500px;
+		margin: 20px 0;
+		line-height: 50px;
+	}
+
+	p{
+		font-size: 20px;
+		width: 550px;
+		margin-bottom: 25px;
+		line-height: 30px;
+	}
+
+	.main-content button {
+		padding: 10px 50px;
+		margin: 0;
+	}
+	
+}
+
+
